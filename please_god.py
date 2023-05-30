@@ -5,7 +5,7 @@ import time, sys, argparse, math
 
 # Connect to the Vehicle
 print ("Connecting")
-connection_string = '/dev/ttyAMA0'
+connection_string = '/dev/ttyUSB0' #doesn't get it regardless of USB port
 vehicle = connect(connection_string, wait_ready=True, baud=57600)
 
 # Display basic vehicle state
