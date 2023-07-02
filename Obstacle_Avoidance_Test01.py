@@ -464,3 +464,6 @@ while True:
             else:
                 SnapManuever('NE')        
         il =+ 1    
+    vehicle.mode = 'AUTO' #might also need the below if it doesnt start on its own
+    #MAV_CMD_MISSION_START
+    #in case auto restarts the mission back to waypoint 1 check the MIS_RESTART parameter
